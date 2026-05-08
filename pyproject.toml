@@ -1,11 +1,11 @@
 [project]
 name = "cast-platform-tools"
-version = "0.1.0"
-description = "cast 平台 (小红书 fake) 业务 agent 工具集 · 包装 cast-api endpoint 成 LLM-callable tools"
+version = "0.2.0"
+description = "cast 平台 (小红书 fake) 业务 agent 工具集 · 包装 cast-api endpoint 成 akong-tools 注册中心里的 LLM-callable tools"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "akong-agent-harness @ git+https://github.com/yarnovo/akong-agent-harness.git@req-meta-package-8repo-split",
+    "akong-tools @ git+https://github.com/yarnovo/akong-tools.git@main",
     "httpx>=0.27",
 ]
 

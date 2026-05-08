@@ -1,4 +1,4 @@
-"""验证 import cast_platform_tools 触发 5 个 tool 全注册到 harness 全局 registry。"""
+"""验证 import cast_platform_tools 触发 5 个 tool 全注册到 akong_tools 全局 registry。"""
 
 from __future__ import annotations
 
@@ -7,7 +7,7 @@ def test_all_5_tools_registered() -> None:
     # 清空 registry · 然后重新 import 触发注册
     import importlib
 
-    from akong_agent_harness import tools as harness_tools
+    import akong_tools as harness_tools
 
     harness_tools.clear_registered_tools()
 
