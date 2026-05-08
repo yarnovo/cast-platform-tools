@@ -1,0 +1,30 @@
+[project]
+name = "cast-platform-tools"
+version = "0.1.0"
+description = "cast 平台 (小红书 fake) 业务 agent 工具集 · 包装 cast-api endpoint 成 LLM-callable tools"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "akong-agent-harness",
+    "httpx>=0.27",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-mock>=3.12",
+]
+
+[tool.uv.sources]
+akong-agent-harness = { path = "../akong-agent-harness", editable = true }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cast_platform_tools"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
