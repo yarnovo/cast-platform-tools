@@ -5,7 +5,7 @@ description = "cast 平台 (小红书 fake) 业务 agent 工具集 · 包装 cas
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "akong-agent-harness @ git+https://github.com/yarnovo/akong-agent-harness.git@main",
+    "akong-agent-harness @ git+https://github.com/yarnovo/akong-agent-harness.git@req-meta-package-8repo-split",
     "httpx>=0.27",
 ]
 
