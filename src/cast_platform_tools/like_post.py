@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from akong_agent_harness.tools import register_tool
+from akong_tools import register_tool
 
 from .client import cast_api
 
